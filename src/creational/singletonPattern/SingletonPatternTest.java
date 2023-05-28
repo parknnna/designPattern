@@ -1,9 +1,13 @@
 package creational.singletonPattern;
 
-public class SingletonPatternExam {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-	public static void main(String[] args) {
-		
+import org.junit.jupiter.api.Test;
+
+class SingletonPatternTest {
+
+	@Test
+	void test() {
 		CompanyInfo company1 = CompanyInfo.getInstance();
 		company1.setCompanyName("naver");
 		company1.setCompanyAddr("구로구");
@@ -16,8 +20,7 @@ public class SingletonPatternExam {
 		
 		System.out.println(company1.toString()); // companyName : kakao, companyAddr : 판교
 
-        System.out.println(company1 == company2); // True
-		
+		assertEquals(company1, company2);
 	}
-	
+
 }
