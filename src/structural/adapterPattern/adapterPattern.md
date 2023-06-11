@@ -12,89 +12,105 @@
 
 어댑터 패턴은 오래된 레거시 코드나 라이브러리를 재사용할 때 유용한 패턴이다. 또한 어댑터 패턴은 서로 호환되지 않는 인터페이스를 가진 코드를 결함 하여 응용 프로그램에서 동작할 수 있도록 도와준다.
 
-*SingletonPatternExam.java*
+*AdapterPatternTest.java*
 
 ```java
-package creational.singletonPattern;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package structural.adapterPattern;
 
 import org.junit.jupiter.api.Test;
 
-class SingletonPatternTest {
+import java.nio.charset.StandardCharsets;
 
-	@Test
-	void test() {
-		CompanyInfo company1 = CompanyInfo.getInstance();
-		company1.setCompanyName("naver");
-		company1.setCompanyAddr("구로구");
-		
-		System.out.println(company1.toString()); // companyName : naver, companyAddr : 구로구
-		
-		CompanyInfo company2 = CompanyInfo.getInstance();
-		company2.setCompanyName("kakao");
-		company2.setCompanyAddr("판교");
-		
-		System.out.println(company1.toString()); // companyName : kakao, companyAddr : 판교
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-		assertEquals(company1, company2);
+public class AdapterPatternTest {
+    @Test
+    void adapterPatternTest() throws CloneNotSupportedException {
 
-        /**
-         * 위와 같이 company1에 companyName과 companyAddr를 "naver", "구로구"로 값을 지정 후
-         * company2에 companyName과 companyAddr를 "kakao", "판교"로 값을 지정 해주었는데 
-         * company1의 값이 "kakao", "판교"로 바뀐걸 확인할 수 있다.
-         * 즉 데이터를 공유 한다는 걸 알수있으며, [company1 == company2]가 true 인것을 보면 같은 객체 임을 확인할 수 있다.
-         */
-		
-	}
-	
+        byte[] imageBytes = "변환할 이미지 정보의 스트림".getBytes(StandardCharsets.UTF_8);
+        RGB rgb = new RGB();
+        rgb.setImages(imageBytes);
+
+        // when
+        HDMIConverter hdmiConverter = new HDMIConverter();
+        HDMI hdmi = hdmiConverter.convertRGBToHDMI(rgb);
+
+        // then
+        assertEquals(hdmi.getImages(), imageBytes);
+
+    }
+}
+
+```
+
+*HDMI.java*
+
+```java
+package structural.adapterPattern;
+
+public class HDMI {
+
+    private byte[] images;
+
+    public HDMI(byte[] images) {
+        this.images = images;
+    }
+
+    public byte[] getImages() {
+        return images;
+    }
+
+    public void setImages(byte[] images) {
+        this.images = images;
+    }
+
 }
 ```
 
-*CompanyInfo.java*
+*RGB.java*
 
 ```java
-package creational.singletonPattern;
+package structural.adapterPattern;
 
-public class CompanyInfo {
-	private static CompanyInfo innstance;
+public class RGB {
 
-	private String companyName;
-	private String companyAddr;
+    private byte[] images;
 
-	private CompanyInfo() {}
+    public byte[] getImages() {
+        return images;
+    }
 
-	public static CompanyInfo getInstance() {
-		if (innstance == null) {
-			synchronized (CompanyInfo.class) {
-				innstance = new CompanyInfo();
-			}
-		}
+    public void setImages(byte[] images) {
+        this.images = images;
+    }
 
-		return innstance;
-	}
+}
 
-	// getter, setter
-	public String getCompanyName() {
-		return companyName;
-	}
+```
 
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
-	}
+*Adapter.java*
 
-	public String getCompanyAddr() {
-		return companyAddr;
-	}
+```java
+package structural.adapterPattern;
 
-	public void setCompanyAddr(String companyAddr) {
-		this.companyAddr = companyAddr;
-	}
-	
-	@Override
-	public String toString() {
-		return String.format("companyName : %s, companyAddr : %s", this.companyName, this.companyAddr);
-	}
+public interface Adapter {
+    HDMI convertRGBToHDMI(RGB rgb);
+}
+
+```
+
+*HDMIConverter.java*
+
+```java
+package structural.adapterPattern;
+
+public class HDMIConverter implements Adapter {
+
+    @Override
+    public HDMI convertRGBToHDMI(RGB rgb) {
+        return new HDMI(rgb.getImages());
+    }
+
 }
 
 ```
