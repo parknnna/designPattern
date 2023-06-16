@@ -28,13 +28,13 @@
             • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/singletonPattern/singleton.md">싱글톤(Abstract Factory)</a> <br/>
          </td>
          <td>
-            • <a href="#">어댑터(Adapter)</a> <br/>
-            • <a href="#">브리지(Bridge)</a> <br/>
-            • <a href="#">컴퍼지트(Composite)</a> <br/>
-            • <a href="#">데커레이터(Decorator)</a> <br/>
-            • <a href="#">퍼사드(Facade)</a> <br/>
-            • <a href="#">플라이웨이트(Flyweight)</a> <br/>
-            • <a href="#">프록시(Proxy)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/adapterPattern/adapterPattern.md">어댑터(Adapter)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/bridgePattern/bridgePattern.md">브리지(Bridge)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/compositePattern/compositePattern.md">컴퍼지트(Composite)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/decoratorPattern/decoratorPattern.md">데커레이터(Decorator)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/facadePattern/facadePattern.md">퍼사드(Facade)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/flyweightPattern/flyweightPattern.md">플라이웨이트(Flyweight)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/proxyPattern/proxyPattern.md">프록시(Proxy)</a> <br/>
          </td>
          <td>
             • <a href="#"> 책임 연쇄(Chain of Responsibility)    </a> <br/>
