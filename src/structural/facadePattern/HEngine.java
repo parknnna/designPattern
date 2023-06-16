@@ -1,4 +1,4 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
 public class HEngine implements Engine {
     EngineStatus engineStatus;

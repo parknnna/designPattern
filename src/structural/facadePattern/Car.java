@@ -1,4 +1,4 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
 public interface Car {
     void open(String key);

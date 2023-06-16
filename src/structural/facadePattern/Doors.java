@@ -1,4 +1,4 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
 public interface Doors {
     void locks(String key);

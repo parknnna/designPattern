@@ -1,7 +1,7 @@
-package structural.DecoratorPattern;
+package structural.decoratorPattern;
 
-public class Mint extends CakeComponentDecorator {
-    public Mint(CakeComponent cakeComponent) {
+public class Strawberry extends CakeComponentDecorator {
+    public Strawberry(CakeComponent cakeComponent) {
         super(cakeComponent);
     }
  
@@ -11,7 +11,7 @@ public class Mint extends CakeComponentDecorator {
     }
  
     private String decorateCake() {
-        return "민트 ";
+        return "딸기 ";
     }
-    
+ 
 }

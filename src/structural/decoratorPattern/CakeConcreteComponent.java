@@ -1,4 +1,4 @@
-package structural.DecoratorPattern;
+package structural.decoratorPattern;
 
 public class CakeConcreteComponent implements CakeComponent {
     @Override

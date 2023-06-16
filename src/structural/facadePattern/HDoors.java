@@ -1,4 +1,4 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
 public class HDoors implements Doors {
     private boolean lock;

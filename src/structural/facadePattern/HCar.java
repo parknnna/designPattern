@@ -1,4 +1,4 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
 public class HCar implements Car {
     // 클래스의 구성 요소

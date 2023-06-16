@@ -1,5 +1,6 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class FacadePatternTest {
@@ -18,7 +19,8 @@ public class FacadePatternTest {
     void carDriveInvalidTest() {
         String key = "CAR_SECRET_KEY";
         Car car = new HCar(new HEngine(), key);
-        assertThrows(CarKeyNotMatchException.class, () -> car.open("INVALID_KEY"));
+
+        Assertions.assertThrows(CarKeyNotMatchException.class, () -> car.open("INVALID_KEY"));
     }
 
 }

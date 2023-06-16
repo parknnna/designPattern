@@ -1,4 +1,4 @@
-package structural.DecoratorPattern;
+package structural.decoratorPattern;
 
 public abstract class CakeComponentDecorator implements CakeComponent {
     private final CakeComponent cakeComponent;

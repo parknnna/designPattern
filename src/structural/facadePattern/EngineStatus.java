@@ -1,4 +1,4 @@
-package structural.FacadePattern;
+package structural.facadePattern;
 
 public enum EngineStatus {
     DRIVE("DRIVE", "운행"),
