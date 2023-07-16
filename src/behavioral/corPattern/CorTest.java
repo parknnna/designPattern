@@ -1,9 +1,5 @@
 package behavioral.corPattern;
 
-import behavioral.commandPattern.Button;
-import behavioral.commandPattern.Computer;
-import behavioral.commandPattern.ComputerOffCommand;
-import behavioral.commandPattern.ComputerOnCommand;
 import org.junit.jupiter.api.Test;
 
 public class CorTest {

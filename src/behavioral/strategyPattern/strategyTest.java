@@ -1,7 +1,5 @@
 package behavioral.strategyPattern;
 
-import behavioral.statePattern.AlertStateContext;
-import behavioral.statePattern.Slient;
 import org.junit.jupiter.api.Test;
 
 public class strategyTest {

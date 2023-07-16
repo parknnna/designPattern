@@ -1,8 +1,8 @@
 package structural.facadePattern;
 
 public class HDoors implements Doors {
-    private boolean lock;
-    private CarKey key;
+    private final boolean lock;
+    private final CarKey key;
  
     public HDoors(CarKey key) {
         this.key = key;

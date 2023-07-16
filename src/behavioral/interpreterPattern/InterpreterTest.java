@@ -1,7 +1,5 @@
 package behavioral.interpreterPattern;
 
-import behavioral.corPattern.Number;
-import behavioral.corPattern.*;
 import org.junit.jupiter.api.Test;
 
 public class InterpreterTest {

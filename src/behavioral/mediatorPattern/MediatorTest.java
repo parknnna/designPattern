@@ -1,12 +1,6 @@
 package behavioral.mediatorPattern;
 
-import behavioral.iteratorPattern.Team;
-import behavioral.iteratorPattern.Worker;
-import behavioral.iteratorPattern.WorkerType;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import java.util.Iterator;
 
 public class MediatorTest {
 

@@ -3,9 +3,9 @@ package structural.facadePattern;
 public class HCar implements Car {
     // 클래스의 구성 요소
     // 구성 요소의 메서드는 호출해도 된다.
-    private Engine engine;
-    private String name;
-    private Doors doors;
+    private final Engine engine;
+    private final String name;
+    private final Doors doors;
  
     public HCar(Engine engine, String key) {
         this.engine = engine;

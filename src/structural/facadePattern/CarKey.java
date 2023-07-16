@@ -1,7 +1,7 @@
 package structural.facadePattern;
 
 public class CarKey {
-    private String key;
+    private final String key;
  
     public CarKey(String key) {
         this.key = key;

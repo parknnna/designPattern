@@ -1,7 +1,7 @@
 package behavioral.mediatorPattern;
 
 public class Flight implements Command {
-    private IATCMediator atcMediator;
+    private final IATCMediator atcMediator;
     
     public Flight(IATCMediator atcMediator) {
         this.atcMediator = atcMediator;

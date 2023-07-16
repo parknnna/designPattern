@@ -1,7 +1,7 @@
 package behavioral.corPattern;
 
 public class Number {
-    private int number;
+    private final int number;
     
     public Number(int number) {
         this.number = number;

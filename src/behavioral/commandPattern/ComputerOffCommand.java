@@ -1,7 +1,7 @@
 package behavioral.commandPattern;
 
 public class ComputerOffCommand implements Command {
-    private Computer computer;
+    private final Computer computer;
 
     public ComputerOffCommand(Computer computer) {
         this.computer = computer;

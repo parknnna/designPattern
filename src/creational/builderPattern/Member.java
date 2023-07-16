@@ -2,9 +2,9 @@ package creational.builderPattern;
 
 public class Member {
 
-	private String name;
-	private int age;
-	private String address;
+	private final String name;
+	private final int age;
+	private final String address;
 	
 	private Member(Builder builder) {
 		this.name = builder.name;

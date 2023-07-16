@@ -8,7 +8,7 @@ public class CircketData implements Subject{
     int runs;
     int wickets;
     float overs;
-    ArrayList<Observer> observerList;
+    final ArrayList<Observer> observerList;
     
     public CircketData() {
         observerList = new ArrayList<Observer>();

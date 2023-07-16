@@ -1,8 +1,8 @@
 package behavioral.interpreterPattern;
 
 public class OrExpression implements Expression{
-    Expression expr1;
-    Expression expr2;
+    final Expression expr1;
+    final Expression expr2;
     
     public OrExpression(Expression expr1, Expression expr2) {
         this.expr1 = expr1;

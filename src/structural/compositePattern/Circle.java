@@ -1,7 +1,5 @@
 package structural.compositePattern;
 
-import java.awt.*;
-
 public class Circle implements Shape {
     private final Point point;
     private String color;

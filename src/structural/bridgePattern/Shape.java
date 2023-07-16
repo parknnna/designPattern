@@ -1,6 +1,6 @@
 package structural.bridgePattern;
 public abstract class Shape {
-    protected Color color;
+    protected final Color color;
 
     public Shape(Color color) {
         this.color = color;

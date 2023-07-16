@@ -1,7 +1,7 @@
 package behavioral.commandPattern;
 
 public class ComputerOnCommand implements Command{
-    private Computer computer;
+    private final Computer computer;
 
     public ComputerOnCommand(Computer computer) {
         this.computer = computer;

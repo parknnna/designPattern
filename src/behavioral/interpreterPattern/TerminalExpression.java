@@ -1,7 +1,7 @@
 package behavioral.interpreterPattern;
 
 public class TerminalExpression implements Expression{
-    String data;
+    final String data;
     
     public TerminalExpression(String data) {
         this.data = data;
