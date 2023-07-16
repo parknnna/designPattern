@@ -22,10 +22,10 @@
       <tr>
          <td>
             • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/abstractFactoryPattern/AbstractFactoryPattern.md">추상팩토리(Abstract Factory)</a> <br/>
-            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/builderPattern/builderPattern.md">빌더(Abstract Factory)</a> <br/>
-            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/factoryMethodPattern/factoryMethodPattern.md">팩토리 메소드(Abstract Factory)</a> <br/>
-            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/prototypePattern/prototypePattern.md">프로토 타입(Abstract Factory)</a> <br/>
-            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/singletonPattern/singleton.md">싱글톤(Abstract Factory)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/builderPattern/builderPattern.md">빌더(Builder)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/factoryMethodPattern/factoryMethodPattern.md">팩토리 메소드(FactoryMethod)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/prototypePattern/prototypePattern.md">프로토 타입(ProtoType)</a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/creational/singletonPattern/singleton.md">싱글톤(Singleton)</a> <br/>
          </td>
          <td>
             • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/adapterPattern/adapterPattern.md">어댑터(Adapter)</a> <br/>
