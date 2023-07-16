@@ -37,17 +37,17 @@
             • <a href="https://github.com/parknnna/designPattern/blob/master/src/structural/proxyPattern/proxyPattern.md">프록시(Proxy)</a> <br/>
          </td>
          <td>
-            • <a href="#"> 책임 연쇄(Chain of Responsibility)    </a> <br/>
-            • <a href="#"> 커맨드(Command)                      </a> <br/>
-            • <a href="#"> 인터프리터(Interpreter)                </a> <br/>
-            • <a href="#"> 이터레이터(Iterator)                   </a> <br/>
-            • <a href="#"> 미디에이터(Mediator)                   </a> <br/>
-            • <a href="#"> 메멘토(Memento)                      </a> <br/>
-            • <a href="#"> 옵저버(Observer)                     </a> <br/>
-            • <a href="#"> 스테이트(State)                       </a> <br/>
-            • <a href="#"> 스트래티지(Strategy)                   </a> <br/>
-            • <a href="#"> 템플릿 메서드(Template Method)          </a> <br/>
-            • <a href="#"> 비지터(Visitor)                      </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/corPattern/CorPattern.md"> 책임 연쇄(Chain of Responsibility)    </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/commandPattern/CommandPattern.md"> 커맨드(Command)                      </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/interpreterPattern/InterpreterPattern.md"> 인터프리터(Interpreter)                </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/iteratorPattern/IteratorPattern.md"> 이터레이터(Iterator)                   </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/mediatorPattern/MediatorPattern.md"> 미디에이터(Mediator)                   </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/mementoPattern/MementoPattern.md"> 메멘토(Memento)                      </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/observerPattern/ObserverPattern.md"> 옵저버(Observer)                     </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/statePattern/StatePattern.md"> 스테이트(State)                       </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/strategyPattern/StrategyPattern.md"> 스트래티지(Strategy)                   </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/templateMethodPattern/TemplateMethodPattern.md"> 템플릿 메서드(Template Method)          </a> <br/>
+            • <a href="https://github.com/parknnna/designPattern/blob/master/src/behavioral/visitorPattern/VisitorPattern.md"> 비지터(Visitor)                      </a> <br/>
          </td>
       </tr>
    </tbody>
